@@ -8,8 +8,10 @@ describe('Nexus', () => {
         cy.get(':nth-child(3) > .block').click()
         cy.get('.bg-gray-50 > :nth-child(2) > .w-full').select('Boituva')
         cy.get(':nth-child(4) > .w-full').select('Entregue')
-        cy.get(':nth-child(5) > .w-full').select('Sem Comprovante')
-        cy.get(':nth-child(7) > .w-full').select('Transferência')
+        cy.get(':nth-child(6) > .w-full').select('Venda')
         cy.get('.space-x-2 > .flex').click()
+        cy.scrollTo('1%', '99%')
+        cy.wait(3000)
+        cy.get('div.flex > :nth-child(4)').click()
     });
 });

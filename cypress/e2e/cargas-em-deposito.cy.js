@@ -11,5 +11,8 @@ describe('Nexus', () => {
         cy.get(':nth-child(5) > .w-full').select('Sem Comprovante')
         cy.get(':nth-child(7) > .w-full').select('Venda')
         cy.get('.space-x-2 > .flex').click()
+        cy.scrollTo('1%', '99%')
+        cy.wait(3000)
+        cy.get('div.flex > :nth-child(4)').click()
     });
 });

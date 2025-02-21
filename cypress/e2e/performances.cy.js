@@ -1,0 +1,28 @@
+describe('Nexus', () => {
+    it('Consulta de documento', () => {
+        cy.visit('http://172.16.144.186/')
+        cy.get('#email').type('luis.rufato')
+        cy.get('#password').type('cmd@2025')
+        cy.get(':nth-child(4) > .flex').click()
+        cy.get('#performances').click()
+        cy.get('.bg-gray-50 > :nth-child(1) > .w-full').type('2025-02-01')
+        cy.get(':nth-child(2) > .w-full').type('2025-02-21')
+        cy.get(':nth-child(4) > .w-full').select('TECNOMYL')
+        cy.get(':nth-child(5) > .w-full').select('Boituva')
+        cy.get(':nth-child(6) > .w-full').select('Entrega Realizada')
+        cy.get(':nth-child(7) > .w-full').select('No Prazo')
+        cy.get(':nth-child(8) > .w-full').select('Venda')
+        cy.get(':nth-child(9) > .w-full').select('Sem Observação')
+        cy.get('.space-x-2 > .flex').click()
+        cy.wait(3000)
+        cy.scrollTo('75%', '25%')
+        cy.wait(2000)
+        cy.scrollTo('50%', '50%')
+        cy.wait(2000)
+        cy.scrollTo('25%', '75%')
+        cy.wait(2000)
+        cy.scrollTo('1%', '99%')
+        cy.wait(2000)
+        cy.get('.justify-between > div.flex > :nth-child(4)').click()
+    });
+});
