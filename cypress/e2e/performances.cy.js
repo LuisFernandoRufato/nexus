@@ -1,5 +1,5 @@
 describe('Nexus', () => {
-    it('Performance', () => {
+    it('Performances', () => {
         cy.visit('http://172.16.144.186/')
         cy.get('#email').type('luis.rufato')
         cy.get('#password').type('cmd@2025')
