@@ -6,7 +6,7 @@ describe('Nexus', () => {
         cy.get(':nth-child(4) > .flex').click()
         cy.get('#performances').click()
         cy.get('.bg-gray-50 > :nth-child(1) > .w-full').type('2025-02-01')
-        cy.get(':nth-child(2) > .w-full').type('2025-02-21')
+        cy.get(':nth-child(2) > .w-full').type('2025-02-25')
         cy.get(':nth-child(4) > .w-full').select('TECNOMYL')
         cy.get(':nth-child(5) > .w-full').select('Boituva')
         cy.get(':nth-child(6) > .w-full').select('Entrega Realizada')
